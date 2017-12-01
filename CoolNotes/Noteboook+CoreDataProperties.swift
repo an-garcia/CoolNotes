@@ -17,8 +17,8 @@ extension Noteboook {
         return NSFetchRequest<Noteboook>(entityName: "Noteboook")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var creationDate: NSDate?
+    @NSManaged public var name: String?
     @NSManaged public var note: Note?
 
 }
