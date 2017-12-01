@@ -3,13 +3,15 @@
     <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Noteboook" inverseName="note" inverseEntity="Noteboook" syncable="YES"/>
     </entity>
     <entity name="Noteboook" representedClassName="Noteboook" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Note" inverseName="notebook" inverseEntity="Note" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Noteboook" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="Note" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Noteboook" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Note" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>
