@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8244BAB91FD6263600E9ABCC /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244BAB81FD6263600E9ABCC /* CoreDataTableViewController.swift */; };
 		8294AA181FD2122C00F207CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA171FD2122C00F207CF /* AppDelegate.swift */; };
 		8294AA1A1FD2122C00F207CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA191FD2122C00F207CF /* ViewController.swift */; };
 		8294AA1D1FD2122C00F207CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8294AA1B1FD2122C00F207CF /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8244BAB81FD6263600E9ABCC /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		8294AA141FD2122C00F207CF /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294AA171FD2122C00F207CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8294AA191FD2122C00F207CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8244BAB71FD6262300E9ABCC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8244BAB81FD6263600E9ABCC /* CoreDataTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		8294AA0B1FD2122C00F207CF = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		8294AA161FD2122C00F207CF /* CoolNotes */ = {
 			isa = PBXGroup;
 			children = (
+				8244BAB71FD6262300E9ABCC /* Controllers */,
 				8294AA171FD2122C00F207CF /* AppDelegate.swift */,
 				8294AA191FD2122C00F207CF /* ViewController.swift */,
 				8294AA2C1FD21C5C00F207CF /* Model */,
@@ -170,6 +181,7 @@
 				8294AA2E1FD21D0300F207CF /* CoreDataStack.swift in Sources */,
 				8294AA3D1FD2222400F207CF /* Noteboook+CoreDataClass.swift in Sources */,
 				8294AA3C1FD2222400F207CF /* Note+CoreDataProperties.swift in Sources */,
+				8244BAB91FD6263600E9ABCC /* CoreDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
