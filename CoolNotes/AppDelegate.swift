@@ -10,10 +10,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    // MARK: Properties
+    
     var window: UIWindow?
     let stack = CoreDataStack(modelName: "Model")!
-    
     
     // MARK: Preload Data
     
@@ -68,14 +69,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Search
     }
-
-
+    
+    // MARK: UIApplicationDelegate
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         // Load some notebooks and notes.
         preloadData()
         return true
     }
-
 }
-

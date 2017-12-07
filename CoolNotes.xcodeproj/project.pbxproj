@@ -12,6 +12,8 @@
 		8251F43A1FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F4361FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift */; };
 		8251F43B1FD8CE9E00BA7F4D /* Notebook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F4371FD8CE9E00BA7F4D /* Notebook+CoreDataClass.swift */; };
 		8251F43C1FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F4381FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift */; };
+		8251F43E1FD9868700BA7F4D /* NotebooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */; };
+		8251F4401FD98A0900BA7F4D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */; };
 		8294AA181FD2122C00F207CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA171FD2122C00F207CF /* AppDelegate.swift */; };
 		8294AA1A1FD2122C00F207CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA191FD2122C00F207CF /* ViewController.swift */; };
 		8294AA1D1FD2122C00F207CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8294AA1B1FD2122C00F207CF /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		8251F4361FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8251F4371FD8CE9E00BA7F4D /* Notebook+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8251F4381FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksViewController.swift; sourceTree = "<group>"; };
+		8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		8294AA141FD2122C00F207CF /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294AA171FD2122C00F207CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8294AA191FD2122C00F207CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		8244BAB71FD6262300E9ABCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */,
+				8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */,
 				8244BAB81FD6263600E9ABCC /* CoreDataTableViewController.swift */,
 			);
 			name = Controllers;
@@ -174,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8294AA1A1FD2122C00F207CF /* ViewController.swift in Sources */,
+				8251F43E1FD9868700BA7F4D /* NotebooksViewController.swift in Sources */,
+				8251F4401FD98A0900BA7F4D /* NotesViewController.swift in Sources */,
 				8251F43A1FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift in Sources */,
 				8294AA181FD2122C00F207CF /* AppDelegate.swift in Sources */,
 				8294AA2B1FD213A300F207CF /* Model.xcdatamodeld in Sources */,
