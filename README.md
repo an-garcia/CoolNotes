@@ -1,8 +1,7 @@
 # CoolNotes
 
 
-![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-29at19.37.46x.png)
-![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-29at19.37.54x.png)
+![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-12-07at09.17.26.png)
 
 
 CoolNotes is an iOS sample application that stores user movies using CoreData.
