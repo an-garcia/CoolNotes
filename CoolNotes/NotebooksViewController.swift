@@ -63,8 +63,13 @@ class NotebooksViewController: CoreDataTableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if let context = fetchedResultsController?.managedObjectContext, let noteBook = fetchedResultsController?.object(at: indexPath) as? Notebook, editingStyle == .delete {
+            context.delete(noteBook)
+        }
+    }
+    
     // MARK: Navigation
-
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,24 +83,29 @@ class NotebooksViewController: CoreDataTableViewController {
                 // Create Fetch Request
                 let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
                 
-                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false),NSSortDescriptor(key: "text", ascending: true)]
+                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false), NSSortDescriptor(key: "text", ascending: true)]
                 
                 // So far we have a search that will match ALL notes. However, we're
                 // only interested in those within the current notebook:
                 // NSPredicate to the rescue!
                 let indexPath = tableView.indexPathForSelectedRow!
-                let notebook = fetchedResultsController?.object(at: indexPath)
+                let notebook = fetchedResultsController?.object(at: indexPath) as? Notebook
                 
                 let pred = NSPredicate(format: "notebook = %@", argumentArray: [notebook!])
+                
                 fr.predicate = pred
                 
                 // Create FetchedResultsController
+                //let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext:fetchedResultsController!.managedObjectContext, sectionNameKeyPath: "humanReadableAge", cacheName: nil)
                 let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext:fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
                 
                 // Inject it into the notesVC
                 notesVC.fetchedResultsController = fc
+                
+                // Inject the notebook too!
+                notesVC.notebook = notebook
             }
         }
     }
-    
 }
+

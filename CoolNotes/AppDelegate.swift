@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - AppDelegate: UIResponder, UIApplicationDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -75,9 +77,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Load some notebooks and notes.
         preloadData()
-        
         // Start Autosaving
-        stack.autoSave(5)
+        stack.autoSave(60)
         return true
     }
     
@@ -101,3 +102,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
+

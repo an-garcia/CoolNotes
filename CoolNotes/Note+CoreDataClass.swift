@@ -27,4 +27,17 @@ public class Note: NSManagedObject {
             fatalError("Unable to find Entity name!")
         }
     }
+    
+    // MARK: Computed Property
+    
+    var humanReadableAge: String {
+        get {
+            let fmt = DateFormatter()
+            fmt.timeStyle = .none
+            fmt.dateStyle = .short
+            fmt.doesRelativeDateFormatting = true
+            fmt.locale = Locale.current
+            return fmt.string(from: creationDate! as Date)
+        }
+    }
 }

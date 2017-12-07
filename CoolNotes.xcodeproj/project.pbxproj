@@ -14,6 +14,9 @@
 		8251F43C1FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F4381FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift */; };
 		8251F43E1FD9868700BA7F4D /* NotebooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */; };
 		8251F4401FD98A0900BA7F4D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */; };
+		8251F4501FD9D0C300BA7F4D /* PhotoFrame+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F44E1FD9D0C300BA7F4D /* PhotoFrame+CoreDataClass.swift */; };
+		8251F4511FD9D0C300BA7F4D /* PhotoFrame+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F44F1FD9D0C300BA7F4D /* PhotoFrame+CoreDataProperties.swift */; };
+		8251F4531FD9F4AD00BA7F4D /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251F4521FD9F4AD00BA7F4D /* NoteViewController.swift */; };
 		8294AA181FD2122C00F207CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA171FD2122C00F207CF /* AppDelegate.swift */; };
 		8294AA1A1FD2122C00F207CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294AA191FD2122C00F207CF /* ViewController.swift */; };
 		8294AA1D1FD2122C00F207CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8294AA1B1FD2122C00F207CF /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 		8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksViewController.swift; sourceTree = "<group>"; };
 		8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		8251F4411FD9A79900BA7F4D /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
+		8251F44E1FD9D0C300BA7F4D /* PhotoFrame+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoFrame+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8251F44F1FD9D0C300BA7F4D /* PhotoFrame+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoFrame+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8251F4521FD9F4AD00BA7F4D /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		8294AA141FD2122C00F207CF /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294AA171FD2122C00F207CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8294AA191FD2122C00F207CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 		8244BAB71FD6262300E9ABCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8251F4521FD9F4AD00BA7F4D /* NoteViewController.swift */,
 				8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */,
 				8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */,
 				8244BAB81FD6263600E9ABCC /* CoreDataTableViewController.swift */,
@@ -83,9 +90,9 @@
 		8294AA161FD2122C00F207CF /* CoolNotes */ = {
 			isa = PBXGroup;
 			children = (
-				8244BAB71FD6262300E9ABCC /* Controllers */,
 				8294AA171FD2122C00F207CF /* AppDelegate.swift */,
 				8294AA191FD2122C00F207CF /* ViewController.swift */,
+				8244BAB71FD6262300E9ABCC /* Controllers */,
 				8294AA2C1FD21C5C00F207CF /* Model */,
 				8294AA1B1FD2122C00F207CF /* Main.storyboard */,
 				8294AA1E1FD2122C00F207CF /* Assets.xcassets */,
@@ -104,6 +111,8 @@
 				8251F4361FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift */,
 				8251F4371FD8CE9E00BA7F4D /* Notebook+CoreDataClass.swift */,
 				8251F4381FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift */,
+				8251F44E1FD9D0C300BA7F4D /* PhotoFrame+CoreDataClass.swift */,
+				8251F44F1FD9D0C300BA7F4D /* PhotoFrame+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,12 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8251F4531FD9F4AD00BA7F4D /* NoteViewController.swift in Sources */,
 				8294AA1A1FD2122C00F207CF /* ViewController.swift in Sources */,
 				8251F43E1FD9868700BA7F4D /* NotebooksViewController.swift in Sources */,
 				8251F4401FD98A0900BA7F4D /* NotesViewController.swift in Sources */,
+				8251F4511FD9D0C300BA7F4D /* PhotoFrame+CoreDataProperties.swift in Sources */,
 				8251F43A1FD8CE9E00BA7F4D /* Note+CoreDataProperties.swift in Sources */,
 				8294AA181FD2122C00F207CF /* AppDelegate.swift in Sources */,
 				8294AA2B1FD213A300F207CF /* Model.xcdatamodeld in Sources */,
+				8251F4501FD9D0C300BA7F4D /* PhotoFrame+CoreDataClass.swift in Sources */,
 				8251F43B1FD8CE9E00BA7F4D /* Notebook+CoreDataClass.swift in Sources */,
 				8251F4391FD8CE9E00BA7F4D /* Note+CoreDataClass.swift in Sources */,
 				8294AA2E1FD21D0300F207CF /* CoreDataStack.swift in Sources */,

@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+import UIKit
+import CoreData
+
 // MARK: - CoreDataTableViewController: UITableViewController
 
 class CoreDataTableViewController: UITableViewController {
@@ -151,4 +154,3 @@ extension CoreDataTableViewController: NSFetchedResultsControllerDelegate {
         tableView.endUpdates()
     }
 }
-
