@@ -14,6 +14,14 @@ class NotesViewController: CoreDataTableViewController {
     
     // MARK: TableView Data Source
     
+    // TODO: Figure out how to add a button to the view and connect it
+    @IBAction func addNewNote(sender: AnyObject) {
+        // Create a new note
+        let n = Note(text: "A new note", context: self.fetchedResultsController!.managedObjectContext)
+        print("Created new note: \(n)")
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Get the note
