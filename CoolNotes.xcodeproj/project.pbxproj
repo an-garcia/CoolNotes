@@ -31,6 +31,7 @@
 		8251F4381FD8CE9E00BA7F4D /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8251F43D1FD9868700BA7F4D /* NotebooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksViewController.swift; sourceTree = "<group>"; };
 		8251F43F1FD98A0900BA7F4D /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		8251F4411FD9A79900BA7F4D /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
 		8294AA141FD2122C00F207CF /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8294AA171FD2122C00F207CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8294AA191FD2122C00F207CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -377,9 +378,10 @@
 		8294AA291FD213A300F207CF /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8251F4411FD9A79900BA7F4D /* Model2.xcdatamodel */,
 				8294AA2A1FD213A300F207CF /* Model.xcdatamodel */,
 			);
-			currentVersion = 8294AA2A1FD213A300F207CF /* Model.xcdatamodel */;
+			currentVersion = 8251F4411FD9A79900BA7F4D /* Model2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
