@@ -38,6 +38,26 @@ class CoreDataTableViewController: UITableViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    // MARK: Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Set the title
+        title = "CoolNotes"
+        
+        // Get the stack
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let stack = delegate.stack
+        
+        // Create a fetchrequest
+        let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Notebook")
+        fr.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true),
+                              NSSortDescriptor(key: "creationDate", ascending: false)]
+        
+        // Create the FetchedResultsController
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
+    }
 }
 
 // MARK: - CoreDataTableViewController (Subclass Must Implement)
