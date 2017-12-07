@@ -2,7 +2,7 @@
 //  Note+CoreDataProperties.swift
 //  CoolNotes
 //
-//  Created by xengar on 2017-12-01.
+//  Created by xengar on 2017-12-06.
 //  Copyright © 2017 xengar. All rights reserved.
 //
 //
@@ -19,6 +19,6 @@ extension Note {
 
     @NSManaged public var creationDate: Date?
     @NSManaged public var text: String?
-    @NSManaged public var notebook: Noteboook?
+    @NSManaged public var notebook: Notebook?
 
 }

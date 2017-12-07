@@ -1,8 +1,8 @@
 //
-//  Noteboook+CoreDataClass.swift
+//  Notebook+CoreDataClass.swift
 //  CoolNotes
 //
-//  Created by xengar on 2017-12-01.
+//  Created by xengar on 2017-12-06.
 //  Copyright © 2017 xengar. All rights reserved.
 //
 //
@@ -10,8 +10,8 @@
 import Foundation
 import CoreData
 
-@objc(Noteboook)
-public class Noteboook: NSManagedObject {
+@objc(Notebook)
+public class Notebook: NSManagedObject {
     // MARK: Initializer
     
     convenience init(name: String, context: NSManagedObjectContext) {
@@ -27,16 +27,4 @@ public class Noteboook: NSManagedObject {
             fatalError("Unable to find Entity name!")
         }
     }
-    
-    var humanReadableAge : String {
-        get {
-            let fmt = DateFormatter()
-            fmt.timeStyle = .none
-            fmt.dateStyle = .short
-            fmt.doesRelativeDateFormatting = true
-            fmt.locale = Locale.current
-            return fmt.string(from: creationDate!)
-        }
-    }
-    
 }
