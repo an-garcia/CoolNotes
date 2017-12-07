@@ -46,7 +46,24 @@ extension CoreDataTableViewController {
     
     // MARK: The oly method you always need to implement!
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        fatalError("This method MUST be implemented by a subclass of CoreDataTableViewController")
+        //fatalError("This method MUST be implemented by a subclass of CoreDataTableViewController")
+        
+        // This method must be implemented by our subclass. There's no way
+        // CoreDataTableViewController can know what type of cell we want to
+        // use.
+        
+        
+        // Find the right notebook for this indexpath
+        let nb = fetchedResultsController!.object(at: indexPath) as! Notebook
+        
+        // Create the cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotebookCell", for: indexPath)
+        
+        // Sync notebook -> cell
+        cell.textLabel?.text = nb.name
+        cell.detailTextLabel?.text = "\(nb.note!.count) note"
+        
+        return cell
     }
 }
 
