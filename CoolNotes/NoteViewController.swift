@@ -2,8 +2,8 @@
 //  NoteViewController.swift
 //  CoolNotes
 //
-//  Created by Fernando Rodríguez Romero on 24/03/16.
-//  Copyright © 2016 udacity.com. All rights reserved.
+//  Created by xengar on 2017-12-01.
+//  Copyright © 2017 xengar. All rights reserved.
 //
 
 import UIKit

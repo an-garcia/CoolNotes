@@ -27,7 +27,7 @@ public class Notebook: NSManagedObject {
             fatalError("Unable to find Entity name!")
         }
     }
-    
+    /*
     // MARK: Computed Property
     var humanReadableAge: String {
         get {
@@ -38,5 +38,5 @@ public class Notebook: NSManagedObject {
             fmt.locale = Locale.current
             return fmt.string(from: creationDate! as Date)
         }
-    }
+    }*/
 }

@@ -2,8 +2,8 @@
 //  NotebooksViewController.swift
 //  CoolNotes
 //
-//  Created by Fernando Rodríguez Romero on 10/03/16.
-//  Copyright © 2016 udacity.com. All rights reserved.
+//  Created by xengar on 2017-12-01.
+//  Copyright © 2017 xengar. All rights reserved.
 //
 
 import UIKit
@@ -83,7 +83,7 @@ class NotebooksViewController: CoreDataTableViewController {
                 // Create Fetch Request
                 let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
                 
-                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false), NSSortDescriptor(key: "text", ascending: true)]
+                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false),NSSortDescriptor(key: "text", ascending: true)]
                 
                 // So far we have a search that will match ALL notes. However, we're
                 // only interested in those within the current notebook:
@@ -108,4 +108,3 @@ class NotebooksViewController: CoreDataTableViewController {
         }
     }
 }
-
